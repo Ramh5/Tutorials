@@ -1,0 +1,47 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Reference",
+"class": "Game",
+"language": "GDScript",
+"path": "res://Game/Game.gd"
+}, {
+"base": "Reference",
+"class": "Inventory",
+"language": "GDScript",
+"path": "res://Game/Inventory.gd"
+}, {
+"base": "Reference",
+"class": "JSONBeautifier",
+"language": "GDScript",
+"path": "res://addons/json_beautifier/json_beautifier.gd"
+}, {
+"base": "Reference",
+"class": "Product",
+"language": "GDScript",
+"path": "res://Game/Product.gd"
+} ]
+_global_script_class_icons={
+"Game": "",
+"Inventory": "",
+"JSONBeautifier": "",
+"Product": ""
+}
+
+[application]
+
+config/name="Save Tutorial Preparation - Basic Game"
+run/main_scene="res://Controller.tscn"
+config/icon="res://icon.png"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
